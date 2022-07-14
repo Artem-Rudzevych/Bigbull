@@ -1,0 +1,45 @@
+.container__works {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.works__title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000000;
+  padding-bottom: 12px;
+}
+.works__text {
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
+.works__text--slogan {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.works {
+  @extend %list-style;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.works__list {
+  width: calc((100% - 30px) / 2);
+  margin-right: 15px;
+  margin-bottom: 110px;
+}
+.works__list:nth-child(2n) {
+  margin-right: 0;
+}
+.works__list:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}

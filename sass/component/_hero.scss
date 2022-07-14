@@ -1,11 +1,40 @@
 .hero__bg {
-  max-width: 1600px;
   width: 100%;
-  height: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/fon.jpg);
+  overflow: hidden;
+}
+.logo {
+  display: inline-block;
+  padding-top: 200px;
+}
+.hero__box {
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/hero.png);
+}
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%) scaleX(1);
+  max-width: 1600px;
+  height: 730px;
+  text-align: center;
+  z-index: 1;
+  // opacity: 0;
+  // transition: opacity 250ms linear;
+}
+.hero__text {
+  margin: 0;
+  padding-top: 114px;
+  padding-bottom: 156px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #000000;
 }
