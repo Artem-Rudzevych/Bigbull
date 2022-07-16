@@ -17,6 +17,18 @@ p {
   outline: 0;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   font-family: "Charis SIL", serif;
   font-style: normal;
@@ -26,7 +38,7 @@ body {
   color: #000000;
 }
 
-.works, .menu {
+.works, .menu, ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -110,12 +122,9 @@ body {
   border-radius: 5px;
 }
 
-.container__works {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.works__img {
+  margin-right: 15px;
+  height: 100%;
 }
 
 .works__title {
@@ -133,31 +142,89 @@ body {
 
 .works__text--slogan {
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   text-align: center;
+}
+
+.works-second__text {
+  width: 100%;
+  padding: 0 10px;
 }
 
 .works {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.works__list {
   width: 1060px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.works__list {
-  width: calc((100% - 30px) / 2);
-  margin-right: 15px;
+  display: flex;
+  align-items: center;
   margin-bottom: 110px;
 }
 
 .works__list:nth-child(2n) {
   margin-right: 0;
+  flex-direction: row-reverse;
 }
 
-.works__list:nth-last-child(-n+2) {
+.works__list:nth-child(2n) .works__img {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.works__list:nth-last-child(-n+1) {
   margin-bottom: 0;
+}
+
+.works__icon {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 1170px;
+  height: 37.45px;
+}
+
+.advantages__title {
+  padding-top: 125px;
+  padding-bottom: 75px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.advantages__list--second {
+  flex-wrap: wrap;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.advantages__item--rel {
+  position: relative;
+}
+
+.advantages__icon--after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 73px;
+  background-repeat: no-repeat;
+  background-image: url(../img/ArrowD.jpg);
 }/*# sourceMappingURL=main.css.map */
