@@ -49,7 +49,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/fon.jpg);
-  overflow: hidden;
 }
 
 .logo {
@@ -210,21 +209,61 @@ body {
   align-items: center;
 }
 
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item--second {
+  position: relative;
+}
+
 .advantages__item:not(:last-child) {
   margin-bottom: 60px;
 }
 
 .advantages__item--rel {
   position: relative;
+  margin: 0 85px;
 }
 
-.advantages__icon--after {
+.advantages__item--rel::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 73px;
+  width: 75px;
+  height: 30px;
+  top: 50%;
+  right: 101%;
+  transform: translate(0%, -50%);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../img/ArrowD.jpg);
+  background-image: url(../../img/ArrowL.svg);
+}
+
+.advantages__item--rel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75px;
+  height: 30px;
+  top: 50%;
+  left: 101%;
+  transform: translate(0%, -50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../img/ArrowR.svg);
+}
+
+.advantages__item--last::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 75px;
+  top: -49%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../img/ArrowD.svg);
 }/*# sourceMappingURL=main.css.map */
